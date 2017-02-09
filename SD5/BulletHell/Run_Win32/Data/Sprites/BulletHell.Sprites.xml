@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Sprites>
+	<Sprite id="joltik" filepath="Data/Images/joltik.png"/>
+	<Sprite id="player-ship" filepath="Data/Images/player_ship.png"/>
+	<Sprite id="enemy-ship" filepath="Data/Images/enemy.png"/>
+	<Sprite id="enemy-bullet" filepath="Data/Images/EnemyBullet.png"/>
+	<Sprite id="player-bullet" filepath="Data/Images/PlayerBullet2.png"/>
+	<Sprite id="meteor" filepath="Data/Images/Asteroid.png"/>
+	<Sprite id="attract" filepath="Data/Images/UJF/UJF_Title2.png"/>
+	<Sprite id="gameover" filepath="Data/Images/UJF/GameOver.png"/>
+	<Sprite id="victory" filepath="Data/Images/UJF/UJF_YouWin.png"/>
+	<Sprite id="star1" filepath="Data/Images/Star1_alpha.png"/>
+	<Sprite id="attract1" filepath="Data/Images/UJF/UJF_Title1.png"/>
+	<Sprite id="attract2" filepath="Data/Images/UJF/UJF_Title2.png"/>
+	<Sprite id="attract3" filepath="Data/Images/UJF/UJF_Title3.png"/>
+	<Sprite id="start1" filepath="Data/Images/UJF/UJF_PressStartOrEnter.png"/>
+	<Sprite id="start2" filepath="Data/Images/alpha.png"/>
+	<Sprite id="speedRound" filepath="Data/Images/UJF/UJF_SpeedRound.png"/>
+	<Sprite id="strikerRound" filepath="Data/Images/UJF/UJF_StrikerRound.png"/>
+	<Sprite id="slayerRound" filepath="Data/Images/UJF/UJF_SlayerRound.png"/>
+	<Sprite id="soft-particle" filepath="Data/Images/particle.png"/>
+</Sprites>
+
+
+

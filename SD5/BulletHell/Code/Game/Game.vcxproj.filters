@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="General">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
+    </Filter>
+    <Filter Include="DebugRenderer">
+      <UniqueIdentifier>{1e83ac3b-74dd-4074-b72c-3164bc682378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{d51231ac-b7be-47db-bd8c-3dd43d5f306e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General\Entities">
+      <UniqueIdentifier>{70283120-e404-4d4a-b2d1-dbfe4c2b7d38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General\Map">
+      <UniqueIdentifier>{6ad7dff3-4029-4e11-b729-3adf3d6a7fc9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TheGame.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="TheApp.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Main_Win32.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCommon.cpp" />
+    <ClCompile Include="RenderCommand.cpp">
+      <Filter>DebugRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>General\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyShip.cpp">
+      <Filter>General\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Meteor.cpp">
+      <Filter>General\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>General\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Star.cpp">
+      <Filter>General\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="MapLoader.cpp">
+      <Filter>General\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>General\Map</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TheGame.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="TheApp.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="World.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommon.hpp" />
+    <ClInclude Include="RenderCommand.hpp">
+      <Filter>DebugRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>General\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyShip.hpp">
+      <Filter>General\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Meteor.hpp">
+      <Filter>General\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.hpp">
+      <Filter>General\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.hpp">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="Star.hpp">
+      <Filter>General\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="MapLoader.hpp">
+      <Filter>General\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.hpp">
+      <Filter>General\Map</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Run_Win32\Data\Shaders\basic_light.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\basic_light.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\fvf.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\fvf.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\fvf2.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\fvf2.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\multi_light.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\multi_light.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\multilight_normal.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\passthrough.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\passthrough.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\post.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\post_gaussian.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\post_nightvision.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\post_nightvision.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\post_passthrough.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\post_red.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\post_ripple.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\post_surprise.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\post_swirl.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Run_Win32\Data\Shaders\multilight_rendermode.frag">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

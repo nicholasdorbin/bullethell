@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ParticleSystems>
+	<ParticleSystem>
+		<Emitter name = "sparks" spriteTag="soft-particle" material = "Additive" initialSpawn="100" spawnRate="0" lifeMin = "1" lifeMax = "1.5" scale="0.5,0.7" tint = "0.8,0.8,0.1,0.2"/>
+		<Emitter name = "smokey" spriteTag="soft-particle" material = "AlphaBlend" initialSpawn="10" spawnRate="0.2" lifeMin = "0.75" lifeMax = "1" scale="1,1" tint = "0.4,0.4,0.42,0.2"/>
+	</ParticleSystem>
+</ParticleSystems>
+
+
+

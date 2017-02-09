@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Animations>
+	<Animation id="attractAnim" endTime="0.4" loopMode = "loop">
+		<Frame resourceID = "attract1" time = "0"/>
+		<Frame resourceID = "attract2" time = "0.1"/>
+		<Frame resourceID = "attract3" time = "0.2"/>
+		<Frame resourceID = "attract2" time = "0.3"/>
+	</Animation>
+	<Animation id="startAnim" endTime="0.1" loopMode = "loop">
+		<Frame resourceID = "start1" time = "0"/>
+		<Frame resourceID = "start2" time = "0.05"/>
+	</Animation>
+</Animations>
+
+
+
