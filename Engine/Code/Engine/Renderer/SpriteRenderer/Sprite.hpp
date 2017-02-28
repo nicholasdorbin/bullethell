@@ -35,6 +35,7 @@ public:
 	static Sprite * Create(std::string const & spriteID, int layer = 0);
 	~Sprite();
 
+	void SwapSprite(std::string const & spriteID);
 	Material * GetMaterial() const;
 	void SetMaterial(Material* mat);
 	Texture const * GetTexture() const;

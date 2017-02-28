@@ -6,6 +6,7 @@
 #include "Engine/Math/HashUtils.hpp"
 #include "Engine/Tools/Parsers/XMLUtilities.hpp"
 
+
 const std::string DEFAULT_SPRITE_VERT_SHADER = "Data/Shaders/sprite.vert";
 const std::string DEFAULT_SPRITE_FRAG_SHADER = "Data/Shaders/sprite.frag";
 
@@ -23,7 +24,8 @@ SpriteResource::SpriteResource(std::string const & id, std::string const & filen
 
 
 	m_name = id;
-	m_id = HashString(id);
+	//m_id = HashString(id);
+	m_id = std::hash<std::string>{}(id);
 
 	m_texture = Texture::CreateOrGetTexture(filename); 
 
@@ -43,7 +45,8 @@ SpriteResource::SpriteResource(XMLNode root)
 	{
 		//m_name = root.getAttribute("id");
 		m_name = ReadXMLAttribute(root, "id", "");
-		m_id = HashString(m_name);
+		//m_id = HashString(m_name);
+		m_id = std::hash<std::string>{}(m_name);
 		std::string filename  = ReadXMLAttribute(root, "filepath", "");
 
 		m_texture = Texture::CreateOrGetTexture(filename);
@@ -58,8 +61,6 @@ SpriteResource::SpriteResource(XMLNode root)
 
 SpriteResource::~SpriteResource()
 {
-	if (m_texture->m_openglTextureID > 0)
-		delete m_texture;
 	delete m_material;
 	if (s_defaultProgramShader != nullptr)
 	{

@@ -16,6 +16,8 @@ const Rgba Rgba::GREEN(0, 255, 0, 255);
 
 const Rgba Rgba::BLUE(0, 0, 255, 255);
 
+const Rgba Rgba::CYAN(0, 255, 255, 255);
+
 const Rgba Rgba::PINK(255, 0, 255, 255);
 
 const Rgba Rgba::YELLOW(255, 255, 0, 255);

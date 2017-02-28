@@ -104,6 +104,15 @@ const Vector2 Vector2::operator-(const Vector2 other) const
 	 result.y = y * scalar;
 	 return result;
  }
+ 
+ Vector2 Vector2::operator*=(const float& scalar)
+ {
+	 Vector2 result;
+	 result.x = x * scalar;
+	 result.y = y * scalar;
+	 return result;
+
+ }
 
  const Vector2 Vector2::operator*(const float& scalar) const
  {

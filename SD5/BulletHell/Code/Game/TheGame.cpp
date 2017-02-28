@@ -352,7 +352,12 @@ TheGame::TheGame()
 	g_ParticleEngine->LoadAllParticleSystemDefinitions();
 
 	m_particleTest = g_ParticleEngine->Create("smoke", LAYER_ATTRACT);
+	m_particleTest->SetSpawnPosition(Vector2(-2.4f,1.5f));
 	m_particleTest->Initialize();
+
+	m_particleTest2 = g_ParticleEngine->Create("smoke", LAYER_ATTRACT);
+	m_particleTest2->SetSpawnPosition(Vector2(2.2f, 1.5f));
+	m_particleTest2->Initialize();
 
 
 
@@ -372,14 +377,14 @@ TheGame::TheGame()
 
 	
 
-	Job* job = g_theJobSystem->JobCreate(GENERIC, TestJobFunction);
-
-	job->JobWrite<float>(1.f);
-	job->JobWrite<int>(42);
-
-
-	float testFloat = job->JobRead<float>();
-	int testInt = job->JobRead<int>();
+// 	Job* job = g_theJobSystem->JobCreate(GENERIC, TestJobFunction);
+// 
+// 	job->JobWrite<float>(1.f);
+// 	job->JobWrite<int>(42);
+// 
+// 
+// 	float testFloat = job->JobRead<float>();
+// 	int testInt = job->JobRead<int>();
 
 }
 
@@ -406,6 +411,7 @@ void TheGame::Update(const float deltaSeconds)
     {
 
 		m_particleTest->Update(deltaSeconds);
+		m_particleTest2->Update(deltaSeconds);
 
 		Rgba testColor = Rgba("0.5,0.5,1,1");
        // UpdateCameraSystem(deltaSeconds);

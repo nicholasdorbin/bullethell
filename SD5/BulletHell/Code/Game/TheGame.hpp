@@ -101,6 +101,7 @@ public:
 	SoundID m_bossMusic;
 
 	ParticleSystem* m_particleTest;
+	ParticleSystem* m_particleTest2;
 
 #ifdef MEMORY_TRACKER
 	std::vector<std::string> m_verboseDataStrings;

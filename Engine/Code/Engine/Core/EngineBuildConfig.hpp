@@ -26,7 +26,7 @@
 // Profiler
 //--------------------------------
 
-#define PROFILER
+//#define PROFILER
 
 
 //Cinematic Camera

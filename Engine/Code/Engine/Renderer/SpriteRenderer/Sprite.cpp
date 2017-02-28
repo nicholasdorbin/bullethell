@@ -45,6 +45,16 @@ Sprite::~Sprite()
 	g_spriteRenderSystem->RemoveSpriteFromLayer(this);
 }
 
+void Sprite::SwapSprite(std::string const & spriteID)
+{
+	const SpriteResource* newResource = g_spriteRenderSystem->GetSpriteResource(spriteID);
+	if (newResource != nullptr)
+	{
+		m_spriteResource = newResource;
+		m_material = m_spriteResource->GetMaterial();
+	}
+}
+
 Material * Sprite::GetMaterial() const
 {
 	//return m_spriteResource->GetMaterial();
@@ -164,6 +174,7 @@ void Sprite::ChangeSpriteLayer(int newLayer)
 {
 	g_spriteRenderSystem->RemoveSpriteFromLayer(this);
 	g_spriteRenderSystem->CreateOrGetLayer(newLayer)->AddSprite(this);
+	m_layerID = newLayer;
 }
 
 void Sprite::SetEnabled(bool isEnabled)

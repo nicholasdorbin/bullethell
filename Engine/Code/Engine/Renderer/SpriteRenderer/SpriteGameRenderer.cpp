@@ -356,7 +356,11 @@ void SpriteGameRenderer::RemoveEffectFromLayer(int layer)
 void SpriteGameRenderer::ConstructMesh(Mesh * out_updateMesh, Sprite const * sprite)
 {
 	g_theProfiler->StartProfilerSample("ConstructMesh");
-    if(!sprite->IsEnabled()) return;
+	if (!sprite->IsEnabled())
+	{
+		g_theProfiler->EndProfilerSample();
+		return;
+	}
 
 	g_theProfiler->StartProfilerSample("Mesh CTOR");
 	MeshBuilder spriteBuilder = MeshBuilder(true);

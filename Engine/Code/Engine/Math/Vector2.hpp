@@ -17,6 +17,8 @@ public:
 	Vector2& Vector2::operator=(const Vector2 &rhs);
 	Vector2& Vector2::operator+=(const Vector2 other);
 	Vector2 Vector2::operator-=(const Vector2 other);
+	Vector2 Vector2::operator*=(const float& scalar);
+	
 	Vector2 operator* (float scalar);
 	const Vector2 operator*(const float& scalar) const;
 	friend Vector2 operator*(float scalar, const Vector2& vec);
@@ -24,6 +26,7 @@ public:
 	const Vector2 operator/(const float& scalar) const;
 	friend bool operator==(const Vector2& lhs, const Vector2& rhs);
 	friend bool operator!=(const Vector2& lhs, const Vector2& rhs);
+	
 	const Vector2 operator-() const;
 	friend bool operator<(const Vector2& lhs, const Vector2& rhs);
 
